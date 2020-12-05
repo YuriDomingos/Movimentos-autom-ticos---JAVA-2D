@@ -27,12 +27,13 @@ import javax.swing.Timer;
  */
 public class Cenario extends JPanel implements ActionListener, KeyListener  {
 
-    private Timer timer = new Timer(20,this);
+    private Timer timer; 
     private int x = 0, y = 0 , velX = 0, velY = 0;
     
 
     public Cenario() {
         
+         timer = new Timer(20,this);
         
         timer.start();
         addKeyListener(this);
